@@ -4,14 +4,9 @@ __pycache__/
 venv/
 tests/
 Temp/
-*.sh
 logo/
 app.json
 Procfile
 .vscode/
 .gitignore
 pyproject.toml
-app/config.py
-freeze.txt
-app/config.py
-app/config.py
