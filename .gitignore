@@ -11,3 +11,6 @@ Procfile
 .vscode/
 .gitignore
 pyproject.toml
+app/config.py
+freeze.txt
+app/config.py
