@@ -10,3 +10,4 @@ Procfile
 .vscode/
 .gitignore
 pyproject.toml
+app/generate_session_string.py
