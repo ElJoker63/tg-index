@@ -10,7 +10,9 @@ RUN pip install -r requirements.txt
 RUN mkdir static
 
 RUN apt update; apt-get install -yy apache2
+RUN ufw allow 8000
 
 CMD ["bash","run.sh"]
 
 EXPOSE 10000
+EXPOSE 8000
