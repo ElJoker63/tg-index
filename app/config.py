@@ -7,7 +7,7 @@ import os
 
 
 try:
-    port = 80
+    port = 8000
 except Exception as e:
     print(e)
     port = -1
