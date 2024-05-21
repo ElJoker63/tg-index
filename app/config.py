@@ -48,7 +48,7 @@ except (KeyError, ValueError):
     print("\n\nPlease set the SESSION_STRING environment variable correctly")
     sys.exit(1)
 
-host = "0.0.0.0"
+host = "tg-index-2hn9.onrender.com"
 debug = False
 block_downloads = False
 results_per_page = 20
