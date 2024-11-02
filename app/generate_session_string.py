@@ -3,8 +3,8 @@ import os
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 
-api_id = int(os.getenv('API_ID') or input("Enter your API_ID: "))
-api_hash = os.getenv('API_HASH') or input("Enter your API_HASH: ")
+api_id = 7684605
+api_hash = "d270d70e8d3c3ad969ea6ecb5857e30b"
 
 with TelegramClient(StringSession(), api_id, api_hash) as client:
     print("\n" + client.session.save())

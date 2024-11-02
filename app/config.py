@@ -7,7 +7,7 @@ import os
 
 
 try:
-    port = 8000
+    port = 8001
 except Exception as e:
     print(e)
     port = -1
@@ -28,12 +28,12 @@ except (KeyError, ValueError):
 
 try:
     index_settings_str = '''{
-    "index_all": true,
+    "index_all": false,
     "index_private": false,
     "index_group": false,
-    "index_channel": true,
+    "index_channel": false,
     "exclude_chats": [],
-    "include_chats": []
+    "include_chats": [-1002219735158,-1002223696552,-1002224982164,-1002191166502,-1002148493716,-1002204341387,-1002240186833,-1002217751897,-1002165087508,-1002231291000,-1002238347262,-1002182750804,-1002164525343,-1002237698840]
 }'''
     index_settings = json.loads(index_settings_str)
 except Exception:
@@ -42,19 +42,19 @@ except Exception:
     sys.exit(1)
 
 try:
-    session_string = os.environ["SESSION_STRING"]
+    session_string = "1AZWarzkBuyouEEYtEr6-hJbWdoUQ24JUm3epEHMHW_maWJoe17Ihe9ve22SaZqIEAAKR-BGWk2fYOI6y4ZAuWw7NGIjsY1N7gNXMoo-02SZdG5Xj_PyJYORJsXXhHpTPwY0DkFiKn06kxe5X2gmERoYXhghRYsBQw2J9Mu0OJJK1J2qX4VdmqtKZtaaB0PxAKPJg0hmA0Y5v9qFMWc1lcSrpnPGaazGtBoNf6XV7xb0AT0x4h_f9gUeAn98gpXTyHW-qYU5SuMKlSrLNLgDMW2JQieyiAxdXjtHK6ZN2fdd9sbcULJAv6PGP-w51FWsPzaUdy_JvP-Nls3aDQ5nLvNnxyaP__qc=" #os.environ["SESSION_STRING"]
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the SESSION_STRING environment variable correctly")
     sys.exit(1)
 
-host = "tg-index-2hn9.onrender.com"
+host = "0.0.0.0"
 debug = False
 block_downloads = False
 results_per_page = 20
 logo_folder = Path(os.path.join(tempfile.gettempdir(), "logo"))
 logo_folder.mkdir(parents=True, exist_ok=True)
-username = ''
+username = 'admin'
 password = ''
 SHORT_URL_LEN = int(3)
 authenticated = bool(username and password)
